@@ -32,7 +32,7 @@ function getDefaultModules() {
         test: /\.scss/,
         loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
       }, */
-      {
+      /* {
         test: /\.css$/,
         loaders: [
           'style-loader?sourceMap',
@@ -43,6 +43,14 @@ function getDefaultModules() {
       {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+      }, */
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.scss/,
+        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
       },
       {
         test: /\.sass/,
